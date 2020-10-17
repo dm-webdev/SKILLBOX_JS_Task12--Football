@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+body {
+  
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 5%;  
+  background-color: rgb(6, 51, 6);
+}
+
+.count {  
+  padding: 1vw;
+  font-size: 4vw;
+  text-align: center;
+  color: yellow
+}
+
+.goal-to-right,
+.goal-to-left {
+  position: absolute;
+  left: calc(50% - 17vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  padding: 2vw ;  
+  width: 30vw;
+  height: 10vw;
+  border-radius: 10px;
+  font-size: 4vw;
+  text-align: center;
+  color: yellow;
+  background-color: blue;
+}
+
+.football {
+  position: relative;
+}
+
+.field {
+  object-fit: contain;
+  max-height: 80vh;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.ball {
+  position: absolute;
+  top: calc(50% - 2vw);
+  left: calc(50% - 2vw);
+  width: 4vw;
+  height: 4vw;
+}
+
+.gate-left,
+.gate-right {
+  position: absolute;
+  width: 2vw;
+  height: 10vw;
+  background-color: rgb(216, 219, 18);
+  outline: 2px solid #1f0cce;
+}
+
+.gate-left {
+  left: 2vw;
+  top: calc(50% - 5vw);
+}
+
+.gate-right {
+  right: 2vw;
+  top: calc(50% - 5vw);
+}
